@@ -1,0 +1,6 @@
+{
+  "name": "Genti's Barbershop",
+  "description": "Tirana's premier 5.0-star barbershop on Rruga Demneri. Precision haircuts, beard sculpting, and hair styling with seamless WhatsApp online booking and direct phone appointments.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
