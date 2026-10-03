@@ -6,10 +6,10 @@ WORKDIR /app
 # Copy dependency definition files
 COPY package*.json ./
 
-# Install dependencies (including devDependencies required for vite build)
-RUN npm ci
+# Install all dependencies (build tools & dev dependencies)
+RUN npm install
 
-# Copy source code and assets
+# Copy application source code
 COPY . .
 
 # Run production build (outputs to /app/dist)
@@ -20,22 +20,21 @@ FROM node:20-alpine AS runner
 
 WORKDIR /app
 
-# Set production environment
 ENV NODE_ENV=production
 ENV PORT=8080
 
-# Install production-only dependencies for minimal container size and fast startup
+# Copy dependency definitions and install production-only dependencies
 COPY package*.json ./
-RUN npm ci --omit=dev
+RUN npm install --omit=dev
 
-# Copy built web application from builder stage
+# Copy compiled frontend assets from builder stage
 COPY --from=builder /app/dist ./dist
 
 # Copy production Express web server
 COPY server.js ./
 
-# Cloud Run defaults to port 8080
+# Cloud Run default port
 EXPOSE 8080
 
-# Run production server
+# Start production server
 CMD ["node", "server.js"]
