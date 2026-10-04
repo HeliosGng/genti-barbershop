@@ -70,7 +70,7 @@ export interface CustomerReview {
 export interface GalleryPhoto {
   id: string;
   title: LocalizedString | string;
-  category: 'fades' | 'beard' | 'styling' | 'interior' | 'user';
+  category: 'haircuts' | 'place' | 'fades' | 'interior' | string;
   imageUrl: string;
   isReservedSlot?: boolean;
   slotNumber?: number;
