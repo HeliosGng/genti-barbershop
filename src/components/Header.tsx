@@ -68,7 +68,6 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking, onOpenCallModal }
           <a href="#services" className="hover:text-[#dfa938] transition-colors py-1">{t.navServices}</a>
           <a href="#booking" className="hover:text-[#dfa938] transition-colors py-1">{t.navBooking}</a>
           <a href="#showcase" className="hover:text-[#dfa938] transition-colors py-1">{t.navShowcase}</a>
-          <a href="#staff" className="hover:text-[#dfa938] transition-colors py-1">{t.navStaff}</a>
           <a href="#location" className="hover:text-[#dfa938] transition-colors py-1">{t.navLocation}</a>
         </nav>
 
@@ -136,13 +135,6 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking, onOpenCallModal }
               className="py-2 hover:text-[#dfa938] border-b border-[#1a1f2c]"
             >
               {t.navShowcase}
-            </a>
-            <a 
-              href="#staff" 
-              onClick={() => setMobileMenuOpen(false)}
-              className="py-2 hover:text-[#dfa938] border-b border-[#1a1f2c]"
-            >
-              {t.navStaff}
             </a>
             <a 
               href="#location" 
