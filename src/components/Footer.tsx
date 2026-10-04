@@ -51,9 +51,6 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking, onOpenCallModal }
                 <a href="#showcase" className="hover:text-[#dfa938] transition-colors">{t.navShowcase}</a>
               </li>
               <li>
-                <a href="#staff" className="hover:text-[#dfa938] transition-colors">{t.navStaff}</a>
-              </li>
-              <li>
                 <a href="#location" className="hover:text-[#dfa938] transition-colors">{t.navLocation}</a>
               </li>
             </ul>
