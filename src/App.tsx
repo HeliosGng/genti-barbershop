@@ -6,7 +6,6 @@ import { Hero } from './components/Hero';
 import { PricingServices } from './components/PricingServices';
 import { BookingWhatsApp } from './components/BookingWhatsApp';
 import { ShowcaseGallery } from './components/ShowcaseGallery';
-import { StaffSection } from './components/StaffSection';
 import { ReviewsSection } from './components/ReviewsSection';
 import { MapLocationSection } from './components/MapLocationSection';
 import { Footer } from './components/Footer';
@@ -21,13 +20,6 @@ function MainApp() {
     if (serviceId) {
       setSelectedServiceId(serviceId);
     }
-    const bookingEl = document.getElementById('booking');
-    if (bookingEl) {
-      bookingEl.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
-  const handleSelectBarber = (_barberId: string) => {
     const bookingEl = document.getElementById('booking');
     if (bookingEl) {
       bookingEl.scrollIntoView({ behavior: 'smooth' });
@@ -58,13 +50,8 @@ function MainApp() {
         {/* Interactive WhatsApp Online Booking Wizard */}
         <BookingWhatsApp preselectedServiceId={selectedServiceId} />
 
-        {/* Showcase Gallery with Reserved Photo Slots */}
+        {/* Showcase Gallery (Only Haircuts & The Place) */}
         <ShowcaseGallery />
-
-        {/* Staff Member Profiles */}
-        <StaffSection
-          onSelectBarberToBook={(barberId) => handleSelectBarber(barberId)}
-        />
 
         {/* Verified 5.0 Google Reviews */}
         <ReviewsSection />
