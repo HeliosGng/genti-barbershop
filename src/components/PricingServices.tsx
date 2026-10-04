@@ -26,28 +26,28 @@ export const PricingServices: React.FC<PricingServicesProps> = ({ onSelectServic
   ];
 
   return (
-    <section id="services" className="py-20 bg-[#0b0d11] scroll-mt-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="services" className="py-12 sm:py-20 bg-[#0b0d11] scroll-mt-20">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 sm:mb-12 gap-4 sm:gap-6">
           <div>
-            <div className="text-xs uppercase tracking-widest text-[#dfa938] font-bold mb-2">
+            <div className="text-xs uppercase tracking-widest text-[#dfa938] font-bold mb-1.5 sm:mb-2">
               {t.pricingKicker}
             </div>
-            <h2 className="text-3xl sm:text-4xl font-bold font-brand text-[#f4f3ee] tracking-tight">
+            <h2 className="text-2xl sm:text-4xl font-bold font-brand text-[#f4f3ee] tracking-tight">
               {t.pricingTitle}
             </h2>
-            <p className="text-[#a0a6b5] text-sm sm:text-base mt-2 max-w-xl">
+            <p className="text-[#a0a6b5] text-xs sm:text-base mt-1.5 sm:mt-2 max-w-xl">
               {t.pricingSubtitle}
             </p>
           </div>
 
           {/* Currency Toggle */}
-          <div className="flex items-center gap-2 self-start md:self-auto bg-[#141822] p-1.5 rounded-lg border border-[#232938]">
-            <span className="text-xs text-[#8e95a5] px-2 font-medium">{t.currencyLabel}</span>
+          <div className="flex items-center gap-1.5 sm:gap-2 self-start md:self-auto bg-[#141822] p-1 sm:p-1.5 rounded-lg border border-[#232938]">
+            <span className="text-[11px] sm:text-xs text-[#8e95a5] px-1.5 sm:px-2 font-medium">{t.currencyLabel}</span>
             <button
               onClick={() => setCurrency('ALL')}
-              className={`px-3 py-1.5 text-xs font-semibold rounded-md transition-all cursor-pointer ${
+              className={`px-2.5 sm:px-3 py-1 sm:py-1.5 text-xs font-semibold rounded-md transition-all cursor-pointer ${
                 currency === 'ALL'
                   ? 'bg-[#dfa938] text-black shadow-sm'
                   : 'text-[#a0a6b5] hover:text-white'
@@ -57,7 +57,7 @@ export const PricingServices: React.FC<PricingServicesProps> = ({ onSelectServic
             </button>
             <button
               onClick={() => setCurrency('EUR')}
-              className={`px-3 py-1.5 text-xs font-semibold rounded-md transition-all cursor-pointer ${
+              className={`px-2.5 sm:px-3 py-1 sm:py-1.5 text-xs font-semibold rounded-md transition-all cursor-pointer ${
                 currency === 'EUR'
                   ? 'bg-[#dfa938] text-black shadow-sm'
                   : 'text-[#a0a6b5] hover:text-white'
@@ -69,12 +69,12 @@ export const PricingServices: React.FC<PricingServicesProps> = ({ onSelectServic
         </div>
 
         {/* Category Filter Tabs */}
-        <div className="flex items-center gap-1 sm:gap-2 overflow-x-auto pb-3 mb-8 no-scrollbar">
+        <div className="flex items-center gap-1.5 sm:gap-2 overflow-x-auto pb-2.5 sm:pb-3 mb-6 sm:mb-8 no-scrollbar">
           {categories.map((cat) => (
             <button
               key={cat.id}
               onClick={() => setActiveCategory(cat.id as any)}
-              className={`px-4 py-2 text-xs font-semibold uppercase tracking-wider rounded-md whitespace-nowrap transition-all cursor-pointer ${
+              className={`px-3 sm:px-4 py-1.5 sm:py-2 text-[11px] sm:text-xs font-semibold uppercase tracking-wider rounded-md whitespace-nowrap transition-all cursor-pointer ${
                 activeCategory === cat.id
                   ? 'bg-[#1e2433] text-[#dfa938] border border-[#dfa938]/40 shadow-sm'
                   : 'bg-[#12151e] text-[#a0a6b5] border border-transparent hover:border-[#2a3244] hover:text-white'
@@ -86,11 +86,11 @@ export const PricingServices: React.FC<PricingServicesProps> = ({ onSelectServic
         </div>
 
         {/* Services Bento Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {filteredServices.map((service) => (
             <div
               key={service.id}
-              className={`relative bg-[#121622] rounded-xl border p-6 flex flex-col justify-between transition-all hover:border-[#dfa938]/50 hover:shadow-xl hover:shadow-black/50 ${
+              className={`relative bg-[#121622] rounded-xl border p-4 sm:p-6 flex flex-col justify-between transition-all hover:border-[#dfa938]/50 hover:shadow-xl hover:shadow-black/50 ${
                 service.popular ? 'border-[#dfa938]/60 bg-gradient-to-b from-[#181d2c] to-[#121622]' : 'border-[#222838]'
               }`}
             >
