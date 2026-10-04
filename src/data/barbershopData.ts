@@ -354,84 +354,65 @@ export const INITIAL_GALLERY: GalleryPhoto[] = [
     id: "gal-1",
     title: {
       sq: "Skin Fade Preciz & Stilim Teksturë",
-      en: "Signature Skin Fade & Textured Top"
+      en: "Precision Skin Fade & Textured Top"
     },
-    category: "fades",
+    category: "haircuts",
     imageUrl: "/src/assets/images/barber_fade_cut_1791034388098.jpg",
     caption: {
-      sq: "Gradim i mprehtë nga zero dhe lartësi e stiluar me krem mat.",
-      en: "Sharp gradient taper with styled matte clay texture."
+      sq: "Gradim i pastër nga zero me gërshërë e makinë dhe stilim me pomadë mat.",
+      en: "Clean razor taper gradient with styled matte clay finish."
     }
   },
   {
     id: "gal-2",
     title: {
-      sq: "Ritual Tradicional me Peshqir të Nxehtë & Brisk",
-      en: "Traditional Hot Towel & Straight Razor Ritual"
+      sq: "Mid Skin Fade & Modern Crop",
+      en: "Mid Skin Fade & Textured Crop"
     },
-    category: "beard",
-    imageUrl: "/src/assets/images/barber_shave_towel_1791034399312.jpg",
+    category: "haircuts",
+    imageUrl: "/src/assets/images/barber_taper_fade_1791107232800.jpg",
     caption: {
-      sq: "Avull eukalipti për hapje poresh dhe konturim i saktë i mollëzave.",
-      en: "Steamed eucalyptus towel with precision cheek lineup."
+      sq: "Konturim i përkryer i vijës së flokut dhe prerje me teksturë evropiane.",
+      en: "Sharp hairline geometry and European modern texture."
     }
   },
   {
     id: "gal-3",
     title: {
-      sq: "Ambjenti & Salloni në Rruga Demneri",
-      en: "The Atmosphere & Interior at Rruga Demneri"
+      sq: "Low Taper Fade & Pompadour Klasik",
+      en: "Low Taper Fade & Classic Pompadour"
     },
-    category: "interior",
+    category: "haircuts",
+    imageUrl: "/src/assets/images/barber_classic_cut_1791107259230.jpg",
+    caption: {
+      sq: "Stil elegant pa kohë me shkrirje të butë dhe linja të pastra qafe.",
+      en: "Timeless gentleman style with seamless blend and crisp neck taper."
+    }
+  },
+  {
+    id: "gal-4",
+    title: {
+      sq: "Ambjenti & Salloni në Rruga Demneri",
+      en: "The Barbershop Atmosphere at Rruga Demneri"
+    },
+    category: "place",
     imageUrl: "/src/assets/images/barbershop_hero_1791034374636.jpg",
     caption: {
-      sq: "Karrige lëkure antike, detaje bronzi dhe stacione të pastra berberësh.",
-      en: "Vintage leather chairs, brass warmth, and pristine grooming stations."
+      sq: "Karrige lëkure komode, pasqyra të ndriçuara dhe mikpritje tradicionale në Tiranë.",
+      en: "Classic leather barber chairs, warm lighting, and authentic Tirana hospitality."
     }
   },
   {
-    id: "gal-slot-1",
+    id: "gal-5",
     title: {
-      sq: "Hapësirë e Rezervuar për Foto #1",
-      en: "Owner Showcase Photo Slot #1"
+      sq: "Karriget Klasike & Stacionet e Punës",
+      en: "Classic Stations & Grooming Interior"
     },
-    category: "user",
-    imageUrl: "",
-    isReservedSlot: true,
-    slotNumber: 1,
+    category: "place",
+    imageUrl: "/src/assets/images/barbershop_interior_place_1791107246733.jpg",
     caption: {
-      sq: "E rezervuar për foton e sallonit tuaj. Klikoni për ta provuar ose ngarkuar menjëherë.",
-      en: "Reserved for your barbershop photo. Tap to preview or replace with your image anytime!"
-    }
-  },
-  {
-    id: "gal-slot-2",
-    title: {
-      sq: "Hapësirë e Rezervuar për Foto #2",
-      en: "Owner Showcase Photo Slot #2"
-    },
-    category: "user",
-    imageUrl: "",
-    isReservedSlot: true,
-    slotNumber: 2,
-    caption: {
-      sq: "E rezervuar për fotot e qethjeve tuaja. Gati për të marrë foton tuaj.",
-      en: "Reserved for your haircut or salon photo. Ready to receive your snapshot."
-    }
-  },
-  {
-    id: "gal-slot-3",
-    title: {
-      sq: "Hapësirë e Rezervuar për Foto #3",
-      en: "Owner Showcase Photo Slot #3"
-    },
-    category: "user",
-    imageUrl: "",
-    isReservedSlot: true,
-    slotNumber: 3,
-    caption: {
-      sq: "E rezervuar për fotot e ambjentit apo produkteve. Ngarkim me 1 klikim.",
-      en: "Reserved for your interior or client photo. Easy 1-click preview & upload."
+      sq: "Pajisje profesionale, higjienë e patëmetë dhe ambient relaksues për çdo klient.",
+      en: "Pristine sanitation, premium tools, and a relaxed environment for every gentleman."
     }
   }
 ];
