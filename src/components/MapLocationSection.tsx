@@ -19,17 +19,17 @@ export const MapLocationSection: React.FC = () => {
   const wazeUrl = `https://waze.com/ul?ll=${SHOP_INFO.lat},${SHOP_INFO.lng}&navigate=yes`;
 
   return (
-    <section id="location" className="py-20 bg-[#0b0d11] scroll-mt-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="location" className="py-12 sm:py-20 bg-[#0b0d11] scroll-mt-20">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-14">
-          <div className="text-xs uppercase tracking-widest text-[#dfa938] font-bold mb-2">
+        <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-14">
+          <div className="text-xs uppercase tracking-widest text-[#dfa938] font-bold mb-1.5 sm:mb-2">
             {t.locationKicker}
           </div>
-          <h2 className="text-3xl sm:text-4xl font-bold font-brand text-[#f4f3ee] tracking-tight mb-4">
+          <h2 className="text-2xl sm:text-4xl font-bold font-brand text-[#f4f3ee] tracking-tight mb-2 sm:mb-4">
             {t.locationTitle}
           </h2>
-          <p className="text-[#a0a6b5] text-base leading-relaxed">
+          <p className="text-[#a0a6b5] text-xs sm:text-base leading-relaxed">
             {t.locationSubtitle}
           </p>
         </div>
